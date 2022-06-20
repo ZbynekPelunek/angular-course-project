@@ -59,7 +59,7 @@ export class RecipeEditComponent implements OnInit {
     this.router.navigate(['../'], {relativeTo: this.route});
   }
 
-  get controls() { // a getter!
+  get ingredientsControls() {
     return (<FormArray>this.recipeForm.get('ingredients')).controls;
   }
 
